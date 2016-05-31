@@ -1,0 +1,77 @@
+\subsection{Gaz parfaits}
+Pour un gaz dit "parfait" présent en quantité n de moles, on peut définir son état à partir des 3 constantes suivantes:
+\begin{itemize}
+    \item{La pression p en Pascal}
+    \item{Le volume V en mètre cube}
+    \item{La température en degré Kelvin}
+\end{itemize}
+
+De manière plus formelle:
+\begin{equation}
+    \label{gazparf}
+    p \cdot V = n\cdot R \cdot T [J]
+\end{equation}
+
+R est la constante des gaz: $R=8.314 [J\cdot K^{-1} \cdot mol^{-1}]$
+
+Si l'une de ces grandeurs reste constante, les deux autres ne peuvent pas varier indépendamment l'une de l'autre. En fixant la température, la loi de Boyle-Mariotte est obtenue:
+\begin{equation}
+    \label{boylemariotte}
+    p\cdot V = constante
+\end{equation}
+
+Cette loi peut être observée grâce à un thermomètre à gaz.
+Le thermomètre à gaz est un instrument de mesure constitué d'un grand tube de verre scellé à l'une de ses extrémités. De l'autre côté, une goutte de mercure assure l'étanchéité. Ce mercure va donc se mouvoir en fonction du rapport entre la pression extérieure $p_0$ et intérieure et définir un volume intérieur $V_0$.\\
+En pompant de l'air, il est possible de créer une dépression d'un côté du mercure et obtenir une pression: $p_0 \Delta p$.\\
+Une pression est aussi exercée sur l'air enfermé par le mercure:
+\begin{equation}
+    p_{Hg} = \rho_{Hg}\cdot g \cdot h_{Hg}
+\end{equation}
+Sachant que:
+\begin{align*}
+    &\rho_{Hg} = 13600 kg/m^3\\
+    &g = 9.81 m/s^2\\
+    &h_{Hg} = hauteur\ de\ la\ colonne\ de\ mercure
+\end{align*}
+
+Donc la pression dans la colonne d'air du côté scellé vaut:
+\begin{equation}
+    \label{pression}
+    p = p_0 + p_{Hg} + \Delta p
+\end{equation}
+
+Pour trouver le volume associé, il suffit d'utiliser la hauteur et la section intérieure du tube de verre.
+\begin{equation}
+    \label{volume}
+    V = \frac{\pi \cdot d^2 \cdot h}{4}
+\end{equation}
+Le diamètre intérieur du tube vaut: $d=0.27cm$.
+
+Quelques rappels concernant les conversions d'unités de pression:
+\begin{align*}
+    &1Pa = 1 N/m^2\\
+    &1bar = 10^5 Pa\\
+    &1torr = 1mmHg = 133.3224 Pa\\
+    &760mmHg = 760torr=1atm=101325Pa=1.01325bar
+\end{align*}
+
+\subsection{Régression linéaire}
+
+Pour la regression linéaire, les formules suivantes peuvent être utilisées afin de calculer les incertitudes liées à la courbe générée.
+Dans ces équations, n représente le nombre de mesures et p la pente.
+
+\begin{equation}
+    \label{regressionr}
+    r=\frac{\sum_{k=1}^{n}(x_k-\bar{x})\cdot(y_k-\bar{y})}{\sqrt{\sum_{k=1}^{n}(x_k-\bar{x})^2\cdot\sum_{k=1}^{n}(y_k-\bar{y})^2}}
+\end{equation}
+\\
+
+\begin{equation}
+    \label{deltam}
+    \Delta p=p\sqrt{\frac{\frac{1}{r^2}-1}{n-2}}
+\end{equation}
+
+\begin{equation}
+    \label{deltah}
+    \Delta h = \Delta p \cdot \sqrt{\frac{\sum_{k=1}^{n}x_k^2}{n}}
+\end{equation}
