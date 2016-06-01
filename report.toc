@@ -4,7 +4,15 @@
 \contentsline {section}{\numberline {0.2}Th\IeC {\'e}orie}{3}{section.0.2}
 \contentsline {subsection}{\numberline {0.2.1}Chaleur massique}{3}{subsection.0.2.1}
 \contentsline {subsection}{\numberline {0.2.2}Chaleur latente de vaporisation}{3}{subsection.0.2.2}
-\contentsline {section}{\numberline {0.3}Manipulation}{4}{section.0.3}
-\contentsline {section}{\numberline {0.4}Conclusion}{4}{section.0.4}
-\contentsline {chapter}{Table des figures}{6}{chapter*.6}
-\contentsline {chapter}{Liste des tableaux}{6}{chapter*.7}
+\contentsline {subsection}{\numberline {0.2.3}Chaleur latente de fusion}{4}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {0.2.4}Incertitudes}{4}{subsection.0.2.4}
+\contentsline {paragraph}{Notation}{4}{section*.4}
+\contentsline {paragraph}{Chiffres significatifs}{5}{section*.5}
+\contentsline {paragraph}{Propagation des erreurs}{5}{section*.6}
+\contentsline {section}{\numberline {0.3}Manipulation}{5}{section.0.3}
+\contentsline {subsection}{\numberline {0.3.1}D\IeC {\'e}termination de la chaleur massique d'un solide}{5}{subsection.0.3.1}
+\contentsline {subsection}{\numberline {0.3.2}Chaleur latente de vaporisation}{8}{subsection.0.3.2}
+\contentsline {subsection}{\numberline {0.3.3}Chaleur latente de fusion}{10}{subsection.0.3.3}
+\contentsline {section}{\numberline {0.4}Conclusion}{10}{section.0.4}
+\contentsline {chapter}{Table des figures}{11}{chapter*.14}
+\contentsline {chapter}{Liste des tableaux}{11}{chapter*.15}

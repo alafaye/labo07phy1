@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.5.17)  18 MAY 2016 11:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2015.11.19)  1 JUN 2016 10:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1164,7 +1164,7 @@ Package color Info: Driver file: pdftex.def on input line 142.
 LaTeX Warning: Unused global option(s):
     [13pt].
 
-(/home/alex/data/HEIG/PHY1/labo7/report.aux)
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
@@ -2559,8 +2559,8 @@ LaTeX Info: Redefining \ref on input line 139.
 LaTeX Info: Redefining \pageref on input line 139.
 LaTeX Info: Redefining \nameref on input line 139.
 
-(/home/alex/data/HEIG/PHY1/labo7/report.out)
-(/home/alex/data/HEIG/PHY1/labo7/report.out)
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.out)
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.out)
 \@outlinefile=\write5
 \openout5 = `report.out'.
 
@@ -2648,7 +2648,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<logo_heig_h80.jpg, id=45, 257.96375pt x 80.3pt>
+<logo_heig_h80.jpg, id=65, 257.96375pt x 80.3pt>
 File: logo_heig_h80.jpg Graphic file (type jpg)
  <use logo_heig_h80.jpg>
 Package pdftex.def Info: logo_heig_h80.jpg used on input line 212.
@@ -2663,31 +2663,60 @@ Package nag Warning: figure with no \caption on input line 213.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/alex/data/HEIG/PHY1/
-labo7/logo_heig_h80.jpg>] (/home/alex/data/HEIG/PHY1/labo7/report.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/alex/data/LiftBox/HE
+IG/PHY1/Labos/Labo7/logo_heig_h80.jpg>]
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.toc)
 \tf@toc=\write6
 \openout6 = `report.toc'.
 
+ [2
 
-[2
-
-] (/home/alex/data/HEIG/PHY1/labo7/intro.tex)
-(/home/alex/data/HEIG/PHY1/labo7/theorie.tex [3])
-(/home/alex/data/HEIG/PHY1/labo7/manipulation.tex
+]
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/intro.tex)
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/theorie.tex [3] [4])
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/manipulation.tex
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/lmr/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
 
+<pic/scheme.jpg, id=130, 636.3775pt x 473.26813pt>
+File: pic/scheme.jpg Graphic file (type jpg)
+ <use pic/scheme.jpg>
+Package pdftex.def Info: pic/scheme.jpg used on input line 6.
+(pdftex.def)             Requested size: 349.61058pt x 260.0pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-) (/home/alex/data/HEIG/PHY1/labo7/concl.tex) [4] [5]
-(/home/alex/data/HEIG/PHY1/labo7/report.lof)
+[5]
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [6 </home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/pic/scheme.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+[7] <pic/figure10.JPG, id=172, 365.365pt x 271.51437pt>
+File: pic/figure10.JPG Graphic file (type jpg)
+ <use pic/figure10.JPG>
+Package pdftex.def Info: pic/figure10.JPG used on input line 139.
+(pdftex.def)             Requested size: 282.59744pt x 210.0pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 1365) has occurred while \output is active []
+
+ [8]
+[9 </home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/pic/figure10.JPG>])
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/concl.tex) [10]
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.lof)
 \tf@lof=\write7
 \openout7 = `report.lof'.
 
 
-(/home/alex/data/HEIG/PHY1/labo7/report.lot)
+(/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.lot)
 \tf@lot=\write8
 \openout8 = `report.lot'.
 
@@ -2696,15 +2725,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package nag Warning: 1 complaints in total.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 251.
-[6
+[11
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 251.
- (/home/alex/data/HEIG/PHY1/labo7/report.aux)
+ (/home/alex/data/LiftBox/HEIG/PHY1/Labos/Labo7/report.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 251.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 251.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 0D6348CD167898BCDF35884C188A17FF;549.
+(rerunfilecheck)             Checksum: 34646615EDFF12856B8FAF61D6EE789F;965.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
  )
 (\end occurred inside a group at level 1)
@@ -2712,13 +2741,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 251.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 24895 strings out of 493054
- 458787 string characters out of 6140586
- 581772 words of memory out of 5000000
- 28014 multiletter control sequences out of 15000+600000
- 70434 words of font info for 70 fonts, out of 8000000 for 9000
+ 24990 strings out of 493054
+ 460254 string characters out of 6140585
+ 580988 words of memory out of 5000000
+ 28039 multiletter control sequences out of 15000+600000
+ 80262 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,13n,61p,10366b,13569s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,15n,61p,10366b,13572s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
 hare/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist/fonts/e
 nc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr
@@ -2731,10 +2760,10 @@ e/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf-dist/fonts/type1/
 public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro12.pfb></
 usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fo
 nts/type1/public/lm/lmsy7.pfb>
-Output written on report.pdf (6 pages, 238340 bytes).
+Output written on report.pdf (11 pages, 549146 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 22606 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 23680 words of extra memory for PDF output out of 24883 (max. 10000000)
 

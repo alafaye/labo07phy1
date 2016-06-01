@@ -1,54 +1,227 @@
-\begin{enumerate}
-    \item{La pompe à main doit être branchée avec le tube ayant son extremité scellée orientée vers le haut}
-    \item{Tapoter le tube afin de réunir en une seule goutte les éclats de mercure disposés le long du tube}
-    \item{Avec la pompe, générer une mesure de $\Delta p$ maximale}
-\end{enumerate}
-
-\begin{enumerate}
-    \item{Retourner le thermomètre à gaz pour que la partie scellée se retrouve en bas}
-    \item{En controlant la pression avec la vanne du thermomètre à gaz, réduire la dépression $\Delta p$ jusqu'à 0}
-\end{enumerate}
+\subsection{Détermination de la chaleur massique d'un solide}
 
 \begin{figure}[!h]
     \centering
-    \caption{Photo Thermomètre à gaz, manomètre et pompe à main}
-%    \includegraphics[angle=269, totalheight=21em]{Data/mano.jpg}
+    \caption{Photo Montage chaleur massique}
+    \includegraphics[totalheight=26em]{pic/scheme.jpg}
 \end{figure}
+\begin{enumerate}
+    \item{Thermomètre}
+    \item{Pipette d'eau distillée}
+    \item{Grenaille de plomb}
+    \item{Grenaille de verre}
+    \item{Grenaille de cuivre}
+    \item{Bécher}
+    \item{Étuve}
+    \item{Tuyau en silicone}
+    \item{Vase calorimétrique}
+    \item{Générateur de vapeur}
+    \item{Balance}
+    \item{Piège à eau}
+\end{enumerate}
 
-\begin{itemize}
-    \item{$T_1 = 280K = 6.85C\degree$}
-    \item{$T_2 = T_{ambiante}$}
-    \item{$T_3 = 340K = 66.85C\degree$}
-\end{itemize}
+Pour cette partie de l'expérience, il s'agit de faire chauffer trois matériaux différents à une température fixée (celle de la vapeur d'eau), et de les plonger ensuite dans un calorimètre rempli d'eau. La différence de température de l'eau permettra ensuite de savoir quelle quantité de chaleur était stockée dans le matériau en question.\\
+Les trois matériaux proposés sont:
+\begin{enumerate}
+    \item{Le cuivre}
+    \item{Le plomb}
+    \item{Le verre}
+\end{enumerate}
+De l'eau est placée dans un récipient fermable de manière étanche, ce récipient est ensuite relié à une étuve à l'aide d'un tuyeau en silicone. L'étuve est elle-même branchée sur un autre récipient permettant de récuprer l'eau de la condensation.\\
+Après avoir été soigneusement pesé, une certaine quantité du matériau est déposé dans l'étuve grâce à un panier prévu à cet effet. Le récipient contenant l'eau est alors chauffé jusqu'à ce que toute l'eau se soit évpaporée. Le matériau devrait être aux alentours de 98C\degree.\\
+Durant la pérdiode de chauffe, le calorimètre a été rempli avec 100g d'eau désionisée à température ambiante.
+Finalement, le matériau a été versé dans le calorimètre, ce dernier refermé hérmétiquement le temps que la température interne arrive à son point d'équilibre.
+La température finale du mélange entre eau et matériau a été relevée.
+
+
+
+Pour calculer la chaleur massique dans chaque cas, la formule~\eqref{final_cm} a été utilisée.
+Quand aux incertitudes, la méthode des dérivées partielles s'est révélée utile pour les calculer:
 
 \begin{align*}
-    &T_{ini} = 7.5C\degree\\
-    &T_{fin} = 11C\degree
+    \Delta c_1 = |\frac{\delta c_1}{\delta m_1}|\cdot \Delta m_1 + |\frac{\delta c_1}{\delta m_2}|\cdot \Delta m_2 + |\frac{\delta c_1}{\delta \theta_m}|\cdot \Delta \theta_m + |\frac{\delta c_1theta_2}{\delta \theta_2}|\cdot \Delta \theta_2
 \end{align*}
 
-\begin{equation}
-    \frac{3}{8}\cdot x + 7.5
-\end{equation}
+Donc:
+
+\begin{align*}
+    &\Delta c_1 = c_2 \frac{(m_2 + m_{cal})\cdot (\theta_m - \theta_2)}{m_1^2 \cdot (\theta_1 - \theta_m)}\cdot \Delta m_1\\
+    &+ c_2 \frac{(\theta_m - \theta_2)}{m_1\cdot (\theta_1 - \theta_m)}\cdot \Delta m_2\\
+    &+ c_2 \frac{(m_2 + m_{cal})\cdot ((\theta_1 - \theta_m)+(\theta_m - \theta_2))}{m_1 \cdot (\theta_1 - \theta_m)^2} \Delta \theta_m\\
+    &+ c_2 \frac{(m_2 + m_{cal})}{m_1 \cdot (\theta_1 - \theta_m)}\Delta \theta_2
+\end{align*}
+
+Avec nos mesures, les résultats suivants ont été obtenus:
 
 \begin{table}[!h]
     \centering
-    \caption{Résultats T=280K}
+    \caption{Résultats Cuivre}
     \begin{tabular}{|l|l|l|}
 	\hline
-	$\Delta p [Pa]$	&Hauteur [cm] &Temperature [C\degree]\\
+	Mesure	&Valeur	&$\Delta$\\
 	\hline
-	100	&10.3 & 7.50  \\
-	200	&11.5 & 7.88  \\
-	300	&13.1 & 8.25  \\
-	400	&15.3 & 8.63  \\
-	500	&17.7 & 9.00  \\
-	600	&21.1 & 9.38  \\
-	650	&23.7 & 9.75  \\
-	700	&26.6 & 10.13 \\
-	720	&28.2 & 10.50 \\
-	740	&29.2 & 10.88 \\
-	760	&32.1 & 11.25 \\
-	780	&33.6 & 11.63 \\
+	$m_1$ [kg]	&0.0627	&10e-5\\
+	$m_2$ [kg]	&0.1	&10e-5\\
+	$m_{cal}$ [kg]	&0.023	&0\\
+	$\theta_1$ [C\degree]	&98	&0\\
+	$\theta_2$ [C\degree]	&20.8	&0.2\\
+	$\theta_m$ [C\degree]	&23.8	&0.2\\
+	$c_2$ [J/ (kg*K)]	&4180	&0\\
 	\hline
     \end{tabular}
 \end{table}
+
+La valeur de la chaleur massique de l'eau ainsi que celles de la masse du calorimètre $m_{cal}$ et celle de la température de la vapeur d'eau ont été considérées comme étant parfaites, car ne provenant pas de nous, mais de tables ou du manuel d'expérience.
+
+Avec la formule~\eqref{final_cm} et celles présentées ci-dessus pour les incertitudes, la valeur suivante a été obtenue pour la chaleur massique du cuivre:\\
+$c_1=331.53\pm 45.18[J/ (kg*K)]$\\
+L'incertitude sur ce résultats est assez grande (plus de 13\%) mais en comparant avec la valeur de la table CRM, l'observation est plutôt que cette dernière est relativement éloignée de notre résultat:\\
+Valeur tabulée: $c_1 = 390[J/ (kg*K)]$\\
+
+Pour le plomb les mesures ont été:
+\begin{table}[!h]
+    \centering
+    \caption{Résultats Plomb}
+    \begin{tabular}{|l|l|l|}
+	\hline
+	Mesure	&Valeur	&$\Delta$\\
+	\hline
+	$m_1$ [kg]	&0.0265	&10e-5\\
+	$m_2$ [kg]	&0.1001	&10e-5\\
+	$m_{cal}$ [kg]	&0.023	&0\\
+	$\theta_1$ [C\degree]	&98	&0\\
+	$\theta_2$ [C\degree]	&21.2	&0.2\\
+	$\theta_m$ [C\degree]	&22.6	&0.2\\
+	$c_2$ [J/ (kg*K)]	&4180	&0\\
+	\hline
+    \end{tabular}
+\end{table}
+
+En réutilisant la formule~\eqref{final_cm}:\\
+$c_1 = 360.53 \pm 104.13[J/ (kg*K)]$\\
+Mais la valeur tabulée reste relativement loin de notre résultat:
+Valeur tabulée: $c_1 = 129[J/ (kg*K)]$
+Mais cela s'explique peut-être par le fait que lors de ces deux premières mesures
+
+Et finalement pour le verre:
+\begin{table}[!h]
+    \centering
+    \caption{Résultats Verre}
+    \begin{tabular}{|l|l|l|}
+	\hline
+	Mesure	&Valeur	&$\Delta$\\
+	\hline
+	$m_1$ [kg]	&0.0153	&10e-5\\
+	$m_2$ [kg]	&0.1	&10e-5\\
+	$m_{cal}$ [kg]	&0.023	&0\\
+	$\theta_1$ [C\degree]	&98	&0\\
+	$\theta_2$ [C\degree]	&21.2	&0.2\\
+	$\theta_m$ [C\degree]	&23.8	&0.2\\
+	$c_2$ [J/ (kg*K)]	&4180	&0\\
+	\hline
+    \end{tabular}
+\end{table}
+
+Les mesures ici semblent un peu meilleure, car:\\
+$c_1 = 1177.49 \pm 185.19[J/ (kg*K)]$\\
+Et:\\
+Valeur tabulée: $c_1 = [830,1450][J/ (kg*K)]$\\
+Ne sachant pas de quel type de verre il s'agit exactement, on ne dipose pas de mieux qu'une certaine portée de résultats possibles dans lequel est compris le résultat de ce laboratoire.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Chaleur latente de vaporisation}
+Pour cette partie de la manipulation, la but est d'observer le phenomène de vaporisation et de mesurer la quantité d'énérgie échangée lors de cette transformation afin de pouvoir calculer la valeur de la chaleur latente de vaporisation de l'eau.
+Pour ce faire, le montage expérimental suivant a été utilisé:
+
+\begin{figure}[!h]
+    \centering
+    \caption{Photo montage vaporisation}
+    \includegraphics[totalheight=21em]{pic/figure10.JPG}
+\end{figure}
+
+Le générateur de vapeur a préalablement été rempli d'eau distillée et soigneusement refermé. Il a été ensuite relié au piège à eau avec un tube en silicone assurant l'étanchéité du système.\\
+Dans un premier temps le piège à eau a été placé au dessus d'un bêcher, le temps que le système se stabilise un peu, permettant ainsi d'éviter les éclaboussure de vapeur.\\
+Dans un second temps, le piège à eau a été plongé dans le calorimètre rempli de 150g d'eau préalablement pesé. La balance ayant été réglée pour une valeur du poids du calorimètre plus 20g elle arrive à l'équilibre au moment ou cette masse d'eau s'est condensée dans le calorimètre.\\
+La température a alors été mesurée.
+
+Une fois de plus les dérivées partielles ont été exploitées pour connaître les incertitudes ainsi que la formule~\eqref{final_lv}:
+\begin{align*}
+    \Delta L_v = |\frac{\delta L_v}{\delta m_1}|\cdot \Delta m_1 + |\frac{\delta L_v}{\delta m_2}|\cdot \Delta m_2 + |\frac{\delta L_v}{\delta \theta_m}|\cdot \Delta \theta_m + |\frac{\delta L_vtheta_2}{\delta \theta_2}|\cdot \Delta \theta_2
+\end{align*}
+
+Donc:
+
+\begin{align*}
+    &\Delta L_v = c_e \frac{(m_2 + m_{cal})\cdot (\theta_m - \theta_2)}{m_1^2}\cdot \Delta m_1\\
+    &+ c_e \frac{(\theta_m - \theta_2)}{m_1}\cdot \Delta m_2\\
+    &+ c_e \frac{(m_2 + m_{cal})}{m_1} \Delta \theta_m\\
+    &+ c_e (\frac{(m_2 + m_{cal})}{m_1} + 1)\Delta \theta_2\\
+\end{align*}
+
+Les mesures suivantes ont été relevées:
+
+\begin{table}[!h]
+    \centering
+    \caption{Résultats Chaleur latente vaporisation}
+    \begin{tabular}{|l|l|l|}
+	\hline
+	Mesure	&Valeur	&$\Delta$\\
+	\hline
+	$m_1$ [kg]	&0.02	&10e-4\\
+	$m_2$ [kg]	&0.15	&10e-5\\
+	$m_{cal}$ [kg]	&0.023	&0\\
+	$c_e$ [J/ (kg*K)]	&4180	&0\\
+	$\theta_2$ [C\degree]	&23.6	&0.2\\
+	$\theta_m$ [C\degree]	&82.5	&0.2\\
+	$\theta_v$ [C\degree]	&98	&0\\
+	\hline
+    \end{tabular}
+\end{table}
+
+En effectuant les calculs, on trouve: $L_v = 2'064'857.30\pm 121'904.27[J/ (kg*K)]$,
+la valeur tabulée étant: $L_v = 2'300'000[J/ (kg*K)]$
+Malgré la taille de l'intervalle d'incertitude, les deux valeurs ne se recoupent pas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Chaleur latente de fusion}
+Cette manipulation est analogue à celle sur la vaporisation dans son principe, mais il s'agit ici d'observer un autre changement d'état qui est la fusion.
+Dans ce but, le vase calorimétrique a été rempli de 200g d'eau chaude à environ 50C\degree. Environ 50g de glaçon ont été ajoutés et la mesure de la température du mélange a été efféctuée une fois la glace fondue.
+
+Une fois de plus pour les incertitudes.
+En utilisant la formule~\eqref{final_lf}:
+\begin{align*}
+    \Delta L_f = |\frac{\delta L_f}{\delta m_1}|\cdot \Delta m_1 + |\frac{\delta L_f}{\delta m_2}|\cdot \Delta m_2 + |\frac{\delta L_f}{\delta \theta_m}|\cdot \Delta \theta_m + |\frac{\delta L_ftheta_2}{\delta \theta_2}|\cdot \Delta \theta_2
+\end{align*}
+
+Donc:
+
+\begin{align*}
+    &\Delta L_f = c_e \frac{(m_2 + m_{cal})\cdot (\theta_2 - \theta_m)}{m_1^2}\cdot \Delta m_1\\
+    &+ c_e \frac{(\theta_2 - \theta_m)}{m_1}\cdot \Delta m_2\\
+    &+ c_e \frac{(m_2 + m_{cal})}{m_1} \Delta \theta_m\\
+    &+ |c_e (\frac{-(m_2 + m_{cal})}{m_1} -1)|\Delta \theta_2\\
+\end{align*}
+
+Les mesures obtenues:
+
+\begin{table}[!h]
+    \centering
+    \caption{Résultats Chaleur latente fusion}
+    \begin{tabular}{|l|l|l|}
+	\hline
+	Mesure	&Valeur	&$\Delta$\\
+	\hline
+	$m_1$ [kg]	&0.0539	&10e-5\\
+	$m_2$ [kg]	&0.1986	&10e-5\\
+	$m_{cal}$ [kg]	&0.023	&0\\
+	$c_e$ [J/ (kg*K)]	&4180	&0\\
+	$\theta_1$ [C\degree]	&0	&0\\
+	$\theta_2$ [C\degree]	&55.8	&0.2\\
+	$\theta_m$ [C\degree]	&32.9	&0.2\\
+	\hline
+    \end{tabular}
+\end{table}
+
+$L_f = 256'021.51 \pm 7800.89[J/ (kg*K)]$
+Valeur tabulée: $L_f = 330'000[J/ (kg*K)]$
+
