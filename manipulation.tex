@@ -21,6 +21,7 @@
 \end{enumerate}
 
 Pour cette partie de l'expérience, il s'agit de faire chauffer trois matériaux différents à une température fixée (celle de la vapeur d'eau), et de les plonger ensuite dans un calorimètre rempli d'eau. La différence de température de l'eau permettra ensuite de savoir quelle quantité de chaleur était stockée dans le matériau en question.\\
+\newpage
 Les trois matériaux proposés sont:
 \begin{enumerate}
     \item{Le cuivre}
@@ -33,8 +34,6 @@ Durant la pérdiode de chauffe, le calorimètre a été rempli avec 100g d'eau d
 Finalement, le matériau a été versé dans le calorimètre, ce dernier refermé hérmétiquement le temps que la température interne arrive à son point d'équilibre.
 La température finale du mélange entre eau et matériau a été relevée.
 
-
-
 Pour calculer la chaleur massique dans chaque cas, la formule~\eqref{final_cm} a été utilisée.
 Quand aux incertitudes, la méthode des dérivées partielles s'est révélée utile pour les calculer:
 
@@ -45,7 +44,7 @@ Quand aux incertitudes, la méthode des dérivées partielles s'est révélée u
 Donc:
 
 \begin{align*}
-    &\Delta c_1 = c_2 \frac{(m_2 + m_{cal})\cdot (\theta_m - \theta_2)}{m_1^2 \cdot (\theta_1 - \theta_m)}\cdot \Delta m_1\\
+    \Delta c_1 &= c_2 \frac{(m_2 + m_{cal})\cdot (\theta_m - \theta_2)}{m_1^2 \cdot (\theta_1 - \theta_m)}\cdot \Delta m_1\\
     &+ c_2 \frac{(\theta_m - \theta_2)}{m_1\cdot (\theta_1 - \theta_m)}\cdot \Delta m_2\\
     &+ c_2 \frac{(m_2 + m_{cal})\cdot ((\theta_1 - \theta_m)+(\theta_m - \theta_2))}{m_1 \cdot (\theta_1 - \theta_m)^2} \Delta \theta_m\\
     &+ c_2 \frac{(m_2 + m_{cal})}{m_1 \cdot (\theta_1 - \theta_m)}\Delta \theta_2
@@ -73,10 +72,20 @@ Avec nos mesures, les résultats suivants ont été obtenus:
 
 La valeur de la chaleur massique de l'eau ainsi que celles de la masse du calorimètre $m_{cal}$ et celle de la température de la vapeur d'eau ont été considérées comme étant parfaites, car ne provenant pas de nous, mais de tables ou du manuel d'expérience.
 
-Avec la formule~\eqref{final_cm} et celles présentées ci-dessus pour les incertitudes, la valeur suivante a été obtenue pour la chaleur massique du cuivre:\\
-$c_1=331.53\pm 45.18[J/ (kg*K)]$\\
+Avec la formule~\eqref{final_cm} et celles présentées ci-dessus pour les incertitudes, la valeur suivante a été obtenue pour la chaleur massique du cuivre:
+\begin{equation}
+    c_1=331.53\pm 45.18[J/ (kg*K)]
+\end{equation}
 L'incertitude sur ce résultats est assez grande (plus de 13\%) mais en comparant avec la valeur de la table CRM, l'observation est plutôt que cette dernière est relativement éloignée de notre résultat:\\
-Valeur tabulée: $c_1 = 390[J/ (kg*K)]$\\
+\begin{equation}
+    Valeur\quad tabulée:\quad c_1 = 390[J/ (kg*K)]
+\end{equation}
+
+Les grosses sources d'erreurs sur cette manipulation viennent probablement de la fuite de chaleur que représentent les tuyeau de silicone. En effet, une partie de l'eau est restée condensée dans les tuyeaux et leur température a grandement augmenté durant l'expérience.
+Une autre source est que le cuivre a du refroidir au contact du panier et lui communiquer une partie de sa chaleur.
+Le calorimétre devant laisser entrer le thermomètre, il n'est pas étanche, et un phenomène de convection de l'air à l'intérieur de ce dernier est probablement une source de fuite d'énérgie.
+Il est aussi impossible de savoir à quelle température se trouvait exactement le cuivre en sortant de l'étuve, la valeur de 98C\degree n'étant qu'une supposition raisonnable.\\
+Pour toutes les mesures qui vont suivre, $m_{cal}$ est la masse équivalent en eau du calorimétre.
 
 Pour le plomb les mesures ont été:
 \begin{table}[!h]
@@ -97,12 +106,17 @@ Pour le plomb les mesures ont été:
     \end{tabular}
 \end{table}
 
-En réutilisant la formule~\eqref{final_cm}:\\
-$c_1 = 360.53 \pm 104.13[J/ (kg*K)]$\\
+En réutilisant la formule~\eqref{final_cm}:
+\begin{equation}
+    c_1 = 360.53 \pm 104.13[J/ (kg*K)]
+\end{equation}
 Mais la valeur tabulée reste relativement loin de notre résultat:
-Valeur tabulée: $c_1 = 129[J/ (kg*K)]$
-Mais cela s'explique peut-être par le fait que lors de ces deux premières mesures
+\begin{equation}
+    Valeur\quad tabulée:\quad c_1 = 129[J/ (kg*K)]
+\end{equation}
+En plus des des sources d'incertitudes évoquées lors du cas du cuivre, lors de cette manipulation deux billes de plomb se sont échappées lors du transfert dans le calorimétre, provoquand ainsi probablement la grande différence entre les valeurs `officielles' trouvées dans le CRM et notre mesure.
 
+\newpage
 Et finalement pour le verre:
 \begin{table}[!h]
     \centering
@@ -122,12 +136,17 @@ Et finalement pour le verre:
     \end{tabular}
 \end{table}
 
-Les mesures ici semblent un peu meilleure, car:\\
-$c_1 = 1177.49 \pm 185.19[J/ (kg*K)]$\\
+Les mesures ici semblent un peu meilleure, car:
+\begin{equation}
+    c_1 = 1177.49 \pm 185.19[J/ (kg*K)]
+\end{equation}
 Et:\\
-Valeur tabulée: $c_1 = [830,1450][J/ (kg*K)]$\\
-Ne sachant pas de quel type de verre il s'agit exactement, on ne dipose pas de mieux qu'une certaine portée de résultats possibles dans lequel est compris le résultat de ce laboratoire.
+\begin{equation}
+    Valeur\quad tabulée:\quad c_1 = [830,1450][J/ (kg*K)]
+\end{equation}
+Ne sachant pas de quel type de verre il s'agit exactement, on ne dipose pas de mieux qu'une certaine portée de résultats possibles dans lequel est compris le résultat de ce laboratoire. Les sources d'erreurs sont les même que pour les cas précédents.
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Chaleur latente de vaporisation}
 Pour cette partie de la manipulation, la but est d'observer le phenomène de vaporisation et de mesurer la quantité d'énérgie échangée lors de cette transformation afin de pouvoir calculer la valeur de la chaleur latente de vaporisation de l'eau.
@@ -152,7 +171,7 @@ Une fois de plus les dérivées partielles ont été exploitées pour connaître
 Donc:
 
 \begin{align*}
-    &\Delta L_v = c_e \frac{(m_2 + m_{cal})\cdot (\theta_m - \theta_2)}{m_1^2}\cdot \Delta m_1\\
+    \Delta L_v &= c_e \frac{(m_2 + m_{cal})\cdot (\theta_m - \theta_2)}{m_1^2}\cdot \Delta m_1\\
     &+ c_e \frac{(\theta_m - \theta_2)}{m_1}\cdot \Delta m_2\\
     &+ c_e \frac{(m_2 + m_{cal})}{m_1} \Delta \theta_m\\
     &+ c_e (\frac{(m_2 + m_{cal})}{m_1} + 1)\Delta \theta_2\\
@@ -180,7 +199,7 @@ Les mesures suivantes ont été relevées:
 
 En effectuant les calculs, on trouve: $L_v = 2'064'857.30\pm 121'904.27[J/ (kg*K)]$,
 la valeur tabulée étant: $L_v = 2'300'000[J/ (kg*K)]$
-Malgré la taille de l'intervalle d'incertitude, les deux valeurs ne se recoupent pas.
+Malgré la taille de l'intervalle d'incertitude, les deux valeurs ne se recoupent pas. Il existe toujours pour cette manipulation le problème de la prise de température dans le calorimétre qui permet à la chaleur de s'échapper. Il est aussi possible que le temps nécessaire à attendre pour éviter les éclaboussures de vapeur ne se soit pas écoulé. La mesure devant être prise rapidement 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Chaleur latente de fusion}
@@ -196,7 +215,7 @@ En utilisant la formule~\eqref{final_lf}:
 Donc:
 
 \begin{align*}
-    &\Delta L_f = c_e \frac{(m_2 + m_{cal})\cdot (\theta_2 - \theta_m)}{m_1^2}\cdot \Delta m_1\\
+    \Delta L_f &= c_e \frac{(m_2 + m_{cal})\cdot (\theta_2 - \theta_m)}{m_1^2}\cdot \Delta m_1\\
     &+ c_e \frac{(\theta_2 - \theta_m)}{m_1}\cdot \Delta m_2\\
     &+ c_e \frac{(m_2 + m_{cal})}{m_1} \Delta \theta_m\\
     &+ |c_e (\frac{-(m_2 + m_{cal})}{m_1} -1)|\Delta \theta_2\\
@@ -222,6 +241,10 @@ Les mesures obtenues:
     \end{tabular}
 \end{table}
 
-$L_f = 256'021.51 \pm 7800.89[J/ (kg*K)]$
-Valeur tabulée: $L_f = 330'000[J/ (kg*K)]$
+Ici aussi, la chaleur latente trouvée est inférieure à celle des tables:
+\begin{align*}
+    &L_f = 256'021.51 \pm 7800.89[J/ (kg*K)]\\
+    &Valeur\quad tabulée:\quad L_f = 330'000[J/ (kg*K)]
+\end{align*}
 
+Ici aussi, il a peut être été attendu un peu trop longtemps avant de faire le relevé de la mesure, afin d'être certain que l'entier de la glace ait fondu, provoquant une légère hausse de température de l'eau restée au contact avec l'air ambiant.
